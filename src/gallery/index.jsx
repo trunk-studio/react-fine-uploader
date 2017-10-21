@@ -274,8 +274,7 @@ const FileInputComponent = ({ uploader, ...props }) => {
     const { children, ...fileInputProps } = props
     const content = children || (
         <span>
-            <UploadIcon className='react-fine-uploader-gallery-file-input-upload-icon' />
-            Select Files
+            新增圖片
         </span>
     )
 
@@ -323,7 +322,7 @@ const getDefaultMaybeDropzoneContent = ({ content, disabled }) => {
         return (
             <span className={ className }>
                 <UploadIcon className='react-fine-uploader-gallery-dropzone-upload-icon' />
-                Drop files here
+                <p>點擊上傳圖片</p>
             </span>
         )
     }
